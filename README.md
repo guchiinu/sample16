@@ -12,7 +12,6 @@ A simple Blender add-on that shows the current Blender version in the N panel.
 
 ## Packaging on Windows
 
-If you need a ZIP file for installation, run `package_addon.bat` from this
-directory. The script creates `blender_version_panel.zip` containing a folder
-named `blender_version_panel` with `__init__.py` inside. Install the ZIP via
-Blender's add-on preferences.
+If you need a ZIP file for installation, run `package_addon.bat`. The script
+creates `blender_version_panel.zip` that can be installed via Blender's add-on
+preferences.

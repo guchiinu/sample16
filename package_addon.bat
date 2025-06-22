@@ -11,7 +11,7 @@ mkdir %ADDON_NAME%
 
 copy /Y blender_version_panel.py %ADDON_NAME%\__init__.py >nul
 
-powershell -NoLogo -NoProfile -Command "Compress-Archive -Path %ADDON_NAME% -DestinationPath %PACKAGE_FILE% -Force"
+powershell -NoLogo -NoProfile -Command "Compress-Archive -Path %ADDON_NAME%\* -DestinationPath %PACKAGE_FILE% -Force"
 
 rmdir /S /Q %ADDON_NAME%
 
