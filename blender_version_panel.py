@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Test Plugin Panel",
     "author": "OpenAI Codex",
-    "version": (1, 0, 0),
+    "version": (1, 0, 1),
     "blender": (2, 80, 0),
     "location": "View3D > Sidebar",
     "description": "Show frame range controls in the N panel",
@@ -18,8 +18,9 @@ class VIEW3D_PT_test_plugin(bpy.types.Panel):
 
     def draw(self, context):
         layout = self.layout
-        layout.prop(context.scene, "frame_start")
-        layout.prop(context.scene, "frame_end")
+        row = layout.row(align=True)
+        row.prop(context.scene, "frame_start")
+        row.prop(context.scene, "frame_end")
 
 def register():
     bpy.utils.register_class(VIEW3D_PT_test_plugin)
