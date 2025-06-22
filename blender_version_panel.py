@@ -21,7 +21,6 @@ class VIEW3D_PT_test_plugin(bpy.types.Panel):
         layout.prop(context.scene, "frame_start")
         layout.prop(context.scene, "frame_end")
 
-
 def register():
     bpy.utils.register_class(VIEW3D_PT_test_plugin)
 
